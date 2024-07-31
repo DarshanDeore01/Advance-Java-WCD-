@@ -64,7 +64,7 @@ To start using this repository, follow the instructions below:
 1. Open Visual Studio Code.
 2. Press `Ctrl + Shift + P` to open the command palette.
 3. Type "Git: Clone" and press `Enter`.
-4. Enter the repository URL (``) and press `Enter`.
+4. Enter the repository URL (`https://github.com/DarshanDeore01/Advance-Java-WCD-.git`) and press `Enter`.
 5. Choose a local directory for cloning the repository.
 6. VS Code will clone the repository into the selected directory.
 
@@ -75,7 +75,7 @@ To start using this repository, follow the instructions below:
 3. In the Import dialog, expand the "Git" folder and select "Projects from Git".
 4. Click "Next".
 5. Select "Clone URI" and click "Next".
-6. Enter the repository URI (``) and click "Next".
+6. Enter the repository URI (`https://github.com/DarshanDeore01/Advance-Java-WCD-.git`) and click "Next".
 7. Choose a local directory for cloning the repository and click "Next".
 8. Select the branches you want to clone (usually "master") and click "Next".
 9. Choose a destination directory and project name for the cloned repository and click "Finish".
