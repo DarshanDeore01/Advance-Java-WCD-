@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-color: #f0f0f0; /* Light grey background */
+            font-family: Arial, sans-serif; /* Modern font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff; /* White background for the form */
+            border-radius: 8px; /* Rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333333; /* Dark grey color for the header */
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #666666; /* Grey color for labels */
+        }
+
+        input[type="text"] {
+            width: calc(100% - 20px); /* Full width minus padding */
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #cccccc; /* Light grey border */
+            border-radius: 4px; /* Slightly rounded corners */
+            font-size: 16px; /* Increase font size */
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            border: none;
+            padding: 15px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 10px;
+            border-radius: 4px; /* Slightly rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            transition: background-color 0.3s; /* Smooth transition */
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
+
+        .message {
+            color: red;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="./LoginServlet" method="post">
+            <label for="uname">Username</label>
+            <input type="text" id="uname" name="uname" placeholder="Enter your username" required>
+
+            <label for="upwd">Password</label>
+            <input type="text" id="upwd" name="upwd" placeholder="Enter your password" required>
+
+            <input type="submit" value="Login">
+        </form>
+        <!-- Optionally include an error message if needed -->
+        <!-- <div class="message">Invalid Login username or password...</div> -->
+    </div>
+</body>
+</html>
